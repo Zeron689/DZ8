@@ -1,22 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./dz.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="text-box">
-      <h3>Пофарбуйте мене в рожевий колір (color:pink).</h3>
-      <p>Даний елемент має залишитись неоформленим.</p>
-      <p id="greycol">Пофарбуйте мене в сірий колір (color:grey).</p>
-      <div>Даний елемент має залишитись неоформленим.</div>
-      <div><p>Пофарбуйте мене в червоний колір (color:red).</p></div>
-      <h3>Даний елемент має залишитись неоформленим.</h3>
-      <p>Пофарбуйте мене в зелений колір (color:green).</p>
-      <p class="yellow">Пофарбуйте мене в жовтий колір (color:yellow).</p>
-    </div>
-  </body>
+  <style>
+    .pink-text {
+      color: rgb(255, 135, 207);
+    }
+
+    .grey-text {
+      color: gray;
+    }
+
+    .red-text {
+      color: red;
+    }
+
+    .yellow-text {
+      color: yellow;
+    }
+
+    .green-text{
+      color: green;
+    }
+
+    .pink-text:hover {
+      color: blue;
+    }
+
+    .grey-text:hover {
+      color: blue;
+    }
+
+    .red-text:hover {
+      color: blue;
+    }
+
+    .yellow-text:hover {
+      color: blue;
+    }
+    .green-text:hover{
+      color: blue;
+    }
+  </style>
+  <title>Документ</title>
+</head>
+<body>
+  <div class="text-box">
+    <nav>
+      <h3 class="pink-text">Пофарбуйте мене в рожевий колір (колір:pink).</h3>
+      <p class="unstyled-element">Даний елемент має залишитись без оформлення.</p>
+      <p id="greycol" class="grey-text">Пофарбуйте мене в сірий колір (колір:grey).</p>
+      <div class="unstyled-element">Даний елемент має залишитись без оформлення.</div>
+      <div><p class="red-text">Пофарбуйте мене в червоний колір (колір:red).</p></div>
+      <h3 class="unstyled-element">Даний елемент має залишитись без оформлення.</h3>
+      <p class="green-text">Пофарбуйте мене в зелений колір (колір:green).</p>
+      <p class="yellow-text">Пофарбуйте мене в жовтий колір (колір:yellow).</p>
+    </nav>
+  </div>
+</body>
 </html>
